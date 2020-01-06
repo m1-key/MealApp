@@ -1,10 +1,5 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Category from './screens/CategoryScreen';
-import CategoryMealScreen from './screens/CategoryMealScreen';
-import FilterScreen from './screens/FilterScreen';
-import FavoriteScreen from './screens/FavoriteScreen';
-import MealDetail from './screens/MealDetailScreen';
 import * as Font from 'expo-font'; 
 import { AppLoading } from 'expo';
 import MealsNavigator from './navigation/MealsNavigator'
