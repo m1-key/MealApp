@@ -8,7 +8,6 @@ import {
     } from "react-native";
 
 import { CATEGORIES } from "../data/dummy-data";
-import Colors from '../constants/Colors';
 
 const CategoryScreen = props => {
 
