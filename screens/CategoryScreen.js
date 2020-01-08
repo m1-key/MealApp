@@ -8,6 +8,9 @@ import {
     } from "react-native";
 
 import { CATEGORIES } from "../data/dummy-data";
+import DrawerOption from "../components/Drawer";
+
+
 
 const CategoryScreen = props => {
 
@@ -39,10 +42,13 @@ const CategoryScreen = props => {
     );
     };
 
-    CategoryScreen.navigationOptions = {
+    
+    CategoryScreen.navigationOptions = (navigationData) => {
+        return {
         headerTitle: 'Meal Categories',
+        headerLeft: <DrawerOption navigationData = {navigationData} />
+        }
     }
-
     const styles = StyleSheet.create({
     screen: {
         flex: 1,
@@ -54,8 +60,8 @@ const CategoryScreen = props => {
         borderBottomColor: "black",
         borderWidth: 1,
         borderRadius: 15,
-        margin: 15,
-        height: 170,
+        margin: 10,
+        height: 100,
         elevation: 15,
         shadowColor: 'black',
         shadowOpacity: 0.25,
@@ -67,7 +73,7 @@ const CategoryScreen = props => {
     },
     title: {
         fontFamily: 'open-sans-bold',
-        fontSize: 22,
+        fontSize: 18,
         textAlign: 'right'
     }
 });
